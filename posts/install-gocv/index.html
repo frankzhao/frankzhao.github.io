@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
     
-  <head>
+    
+
+
+    <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +14,43 @@
 <meta name="generator" content="Hugo 0.48" />
 
     
+    
+    
 
-<title>Blog</title>
+<title>Installing GoCV • Blog</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Installing GoCV"/>
+<meta name="twitter:description" content="Installing GoCV requires a few extra environment variables to be set.
 
-<meta property="og:title" content="Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://frankzhao.com.au/" />
-<meta property="og:updated_time" content="2018-09-11T22:27:37&#43;12:00"/>
+Before the make install phase, set the following variables
+
+export GOPATH=/home/frank/go
+export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/lib64
+
+
+It is also easier to install the OpenCV libraries system-wide by running make install as the root user.
+
+"/>
+
+<meta property="og:title" content="Installing GoCV" />
+<meta property="og:description" content="Installing GoCV requires a few extra environment variables to be set.
+
+Before the make install phase, set the following variables
+
+export GOPATH=/home/frank/go
+export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/lib64
+
+
+It is also easier to install the OpenCV libraries system-wide by running make install as the root user.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://frankzhao.com.au/posts/install-gocv/" /><meta property="article:published_time" content="2018-09-11T22:27:37&#43;12:00"/>
+<meta property="article:modified_time" content="2018-09-11T22:27:37&#43;12:00"/>
 
     
 
@@ -40,10 +67,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
     
-
-<link href="https://frankzhao.com.au/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
-<link href="https://frankzhao.com.au/index.xml" rel="feed" type="application/rss+xml" title="Blog" />
-
 
 </head>
 
@@ -105,19 +128,28 @@
 
         <div class="content container">
             
-  <div class="post-list">
+    <article>
+  <header>
+    <h1>Installing GoCV</h1>
+     
+    
+<div class="post__meta">
     
     
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/posts/install-gocv/">Installing GoCV</a>
-          
-        </span>
-        <span class="item__date">
-          Sep 11, 2018
-        </span>
-        
-        <p>Installing GoCV requires a few extra environment variables to be set.</p>
+      <i class="fas fa-calendar-alt"></i> Sep 11, 2018
+    
+    
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
+
+
+  </header>
+  <div class="post">
+    <p>Installing GoCV requires a few extra environment variables to be set.</p>
 
 <p>Before the <code>make install</code> phase, set the following variables</p>
 
@@ -129,21 +161,37 @@ export LD_LIBRARY_PATH=/usr/local/lib64
 <p>It is also easier to install the OpenCV libraries system-wide by running <code>make install</code> as the root user.</p>
 
 <p></p>
-        
-        
-        </div>
-     
   </div>
   
 
+<div class="navigation navigation-single">
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
 
         </div>
         
-  
-  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+    
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
   integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
   crossorigin="anonymous">
 </script>
+
+
+
+
+    
+
 
 
     </body>
