@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
-    <link>https://frankzhao.com.au/</link>
+    <link>https://blog.frankzhao.com.au/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Sep 2018 22:27:37 +1200</lastBuildDate>
     
-	<atom:link href="https://frankzhao.com.au/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.frankzhao.com.au/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing GoCV</title>
-      <link>https://frankzhao.com.au/posts/install-gocv/</link>
+      <link>https://blog.frankzhao.com.au/posts/install-gocv/</link>
       <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
       
-      <guid>https://frankzhao.com.au/posts/install-gocv/</guid>
+      <guid>https://blog.frankzhao.com.au/posts/install-gocv/</guid>
       <description>&lt;p&gt;Installing GoCV requires a few extra environment variables to be set.&lt;/p&gt;
 
 &lt;p&gt;Before the &lt;code&gt;make install&lt;/code&gt; phase, set the following variables&lt;/p&gt;
