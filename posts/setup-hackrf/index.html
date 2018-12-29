@@ -22,20 +22,96 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="HackRF One Initial Setup"/>
-<meta name="twitter:description" content="Setup  Install development tools and drivers
-sudo dnf install hackrf hackrf-devel  Get latest firmware from https://github.com/mossmann/hackrf/releases
- Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-cd firmware-bin hackrf_spiflash -w hackrf_one_usb.bin  Check firmware version
-$ hackrf_info hackrf_info version: unknown libhackrf version: unknown (0.5) Found HackRF Index: 0 Serial number: 0000000000000000a06063c8220a635f Board ID Number: 2 (HackRF One) Firmware Version: 2018.01.1 (API:1.02) Part ID Number: 0xa000cb3c 0x00534f64  Update CPLD
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf   Useful Tools  GQRX http://gqrx."/>
+<meta name="twitter:description" content="Setup
+
+
+Install development tools and drivers
+
+sudo dnf install hackrf hackrf-devel
+
+
+Get latest firmware from https://github.com/mossmann/hackrf/releases
+
+Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
+
+cd firmware-bin
+hackrf_spiflash -w hackrf_one_usb.bin
+
+
+Check firmware version
+
+$ hackrf_info
+hackrf_info version: unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000a06063c8220a635f
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2018.01.1 (API:1.02)
+Part ID Number: 0xa000cb3c 0x00534f64
+
+
+Update CPLD
+
+hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+
+
+
+Useful Tools
+
+
+GQRX http://gqrx.dk/ spectrum monitor
+GNURadio
+Audacity
+
+
+"/>
 
 <meta property="og:title" content="HackRF One Initial Setup" />
-<meta property="og:description" content="Setup  Install development tools and drivers
-sudo dnf install hackrf hackrf-devel  Get latest firmware from https://github.com/mossmann/hackrf/releases
- Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-cd firmware-bin hackrf_spiflash -w hackrf_one_usb.bin  Check firmware version
-$ hackrf_info hackrf_info version: unknown libhackrf version: unknown (0.5) Found HackRF Index: 0 Serial number: 0000000000000000a06063c8220a635f Board ID Number: 2 (HackRF One) Firmware Version: 2018.01.1 (API:1.02) Part ID Number: 0xa000cb3c 0x00534f64  Update CPLD
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf   Useful Tools  GQRX http://gqrx." />
+<meta property="og:description" content="Setup
+
+
+Install development tools and drivers
+
+sudo dnf install hackrf hackrf-devel
+
+
+Get latest firmware from https://github.com/mossmann/hackrf/releases
+
+Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
+
+cd firmware-bin
+hackrf_spiflash -w hackrf_one_usb.bin
+
+
+Check firmware version
+
+$ hackrf_info
+hackrf_info version: unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000a06063c8220a635f
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2018.01.1 (API:1.02)
+Part ID Number: 0xa000cb3c 0x00534f64
+
+
+Update CPLD
+
+hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+
+
+
+Useful Tools
+
+
+GQRX http://gqrx.dk/ spectrum monitor
+GNURadio
+Audacity
+
+
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.frankzhao.com.au/posts/setup-hackrf/" /><meta property="article:published_time" content="2018-12-29T21:44:08&#43;13:00"/>
 <meta property="article:modified_time" content="2018-12-29T21:44:08&#43;13:00"/>
@@ -167,9 +243,7 @@ hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf   Useful Tools  GQRX http
 
   </header>
   <div class="post">
-    
-
-<h2 id="setup">Setup</h2>
+    <h2 id="setup">Setup</h2>
 
 <ol>
 <li><p>Install development tools and drivers</p>
@@ -212,6 +286,7 @@ Part ID Number: 0xa000cb3c 0x00534f64
 <li>Audacity</li>
 </ul>
 
+<p></p>
   </div>
   
 

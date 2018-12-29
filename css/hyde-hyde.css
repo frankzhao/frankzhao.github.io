@@ -584,7 +584,7 @@ a.badge-tag {
 @media (min-width: 768px) {
   html,
   body {
-    font-size: 16px; }
+    font-size: 18px; }
   .sidebar {
     bottom: 0;
     left: 0;
@@ -622,7 +622,7 @@ a.badge-tag {
 @media (min-width: 992px) {
   html,
   body {
-    font-size: 20px; }
+    font-size: 18px; }
   .content {
     margin-left: 20rem;
     margin-right: 2rem;

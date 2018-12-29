@@ -23,7 +23,7 @@
 <meta property="og:description" content="Technical musings and notes" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.frankzhao.com.au/" />
-<meta property="og:updated_time" content="2018-09-11T22:27:37&#43;12:00"/>
+<meta property="og:updated_time" content="2018-12-29T21:44:08&#43;13:00"/>
 
     
 
@@ -138,6 +138,63 @@
   <div class="post-list">
     
     
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/setup-hackrf/">HackRF One Initial Setup</a>
+          
+        </span>
+        <span class="item__date">
+          Dec 29, 2018
+        </span>
+        
+        <h2 id="setup">Setup</h2>
+
+<ol>
+<li><p>Install development tools and drivers</p>
+
+<pre><code class="language-bash">sudo dnf install hackrf hackrf-devel
+</code></pre></li>
+
+<li><p>Get latest firmware from <a href="https://github.com/mossmann/hackrf/releases">https://github.com/mossmann/hackrf/releases</a></p></li>
+
+<li><p>Update firmware (see <a href="https://github.com/mossmann/hackrf/wiki/Updating-Firmware">https://github.com/mossmann/hackrf/wiki/Updating-Firmware</a>)</p>
+
+<pre><code class="language-bash">cd firmware-bin
+hackrf_spiflash -w hackrf_one_usb.bin
+</code></pre></li>
+
+<li><p>Check firmware version</p>
+
+<pre><code class="language-bash">$ hackrf_info
+hackrf_info version: unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000a06063c8220a635f
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2018.01.1 (API:1.02)
+Part ID Number: 0xa000cb3c 0x00534f64
+</code></pre></li>
+
+<li><p>Update CPLD</p>
+
+<pre><code>hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+</code></pre></li>
+</ol>
+
+<h1 id="useful-tools">Useful Tools</h1>
+
+<ul>
+<li>GQRX <a href="http://gqrx.dk/">http://gqrx.dk/</a> spectrum monitor</li>
+<li>GNURadio</li>
+<li>Audacity</li>
+</ul>
+
+<p></p>
+        
+        
+        </div>
+     
       <div class="post-list__item">
         <span class="item__title--big">
           <a href="/posts/install-gocv/">Installing GoCV</a>
