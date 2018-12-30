@@ -26,9 +26,7 @@ export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=/usr/local/lib64
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;It is also easier to install the OpenCV libraries system-wide by running &lt;code&gt;make install&lt;/code&gt; as the root user.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;It is also easier to install the OpenCV libraries system-wide by running &lt;code&gt;make install&lt;/code&gt; as the root user.&lt;/p&gt;</description>
     </item>
     
   </channel>
