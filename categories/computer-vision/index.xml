@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Blog</title>
+    <link>https://blog.frankzhao.com.au/categories/computer-vision/</link>
+    <description>Recent content in Computer Vision on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Sep 2018 22:27:37 +1200</lastBuildDate>
+    
+	<atom:link href="https://blog.frankzhao.com.au/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing GoCV</title>
+      <link>https://blog.frankzhao.com.au/posts/install-gocv/</link>
+      <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/install-gocv/</guid>
+      <description>&lt;p&gt;Installing GoCV requires a few extra environment variables to be set.&lt;/p&gt;
+
+&lt;p&gt;Before the &lt;code&gt;make install&lt;/code&gt; phase, set the following variables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export GOPATH=/home/frank/go
+export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/lib64
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is also easier to install the OpenCV libraries system-wide by running &lt;code&gt;make install&lt;/code&gt; as the root user.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

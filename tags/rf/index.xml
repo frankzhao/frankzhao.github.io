@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rf on Blog</title>
+    <link>https://blog.frankzhao.com.au/tags/rf/</link>
+    <description>Recent content in Rf on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Dec 2018 21:44:08 +1300</lastBuildDate>
+    
+	<atom:link href="https://blog.frankzhao.com.au/tags/rf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HackRF One Initial Setup</title>
+      <link>https://blog.frankzhao.com.au/posts/setup-hackrf/</link>
+      <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/setup-hackrf/</guid>
+      <description>&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install development tools and drivers&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf install hackrf hackrf-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Get latest firmware from &lt;a href=&#34;https://github.com/mossmann/hackrf/releases&#34;&gt;https://github.com/mossmann/hackrf/releases&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update firmware (see &lt;a href=&#34;https://github.com/mossmann/hackrf/wiki/Updating-Firmware&#34;&gt;https://github.com/mossmann/hackrf/wiki/Updating-Firmware&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd firmware-bin
+hackrf_spiflash -w hackrf_one_usb.bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check firmware version&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hackrf_info
+hackrf_info version: unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000a06063c8220a635f
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2018.01.1 (API:1.02)
+Part ID Number: 0xa000cb3c 0x00534f64
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update CPLD&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;useful-tools&#34;&gt;Useful Tools&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GQRX &lt;a href=&#34;http://gqrx.dk/&#34;&gt;http://gqrx.dk/&lt;/a&gt; spectrum monitor&lt;/li&gt;
+&lt;li&gt;GNURadio&lt;/li&gt;
+&lt;li&gt;Audacity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

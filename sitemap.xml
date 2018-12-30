@@ -24,13 +24,56 @@
   </url>
   
   <url>
+    <loc>https://blog.frankzhao.com.au/categories/computer-vision/</loc>
+    <lastmod>2018-09-11T22:27:37+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/categories/electrical/</loc>
+    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/tags/electronics/</loc>
+    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/tags/golang/</loc>
+    <lastmod>2018-09-11T22:27:37+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/tags/hackrf/</loc>
+    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/tags/opencv/</loc>
+    <lastmod>2018-09-11T22:27:37+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.frankzhao.com.au/posts/</loc>
     <lastmod>2018-12-29T21:44:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://blog.frankzhao.com.au/tags/rf/</loc>
+    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.frankzhao.com.au/tags/</loc>
+    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   

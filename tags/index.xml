@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 29 Dec 2018 21:44:08 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.frankzhao.com.au/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Electronics</title>
+      <link>https://blog.frankzhao.com.au/tags/electronics/</link>
+      <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blog.frankzhao.com.au/tags/golang/</link>
+      <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackrf</title>
+      <link>https://blog.frankzhao.com.au/tags/hackrf/</link>
+      <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/tags/hackrf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opencv</title>
+      <link>https://blog.frankzhao.com.au/tags/opencv/</link>
+      <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rf</title>
+      <link>https://blog.frankzhao.com.au/tags/rf/</link>
+      <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/tags/rf/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
