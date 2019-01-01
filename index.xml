@@ -6,10 +6,32 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Dec 2018 21:44:08 +1300</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 17:27:11 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.frankzhao.com.au/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fedora 28 usermod groups fails</title>
+      <link>https://blog.frankzhao.com.au/posts/fedora-28-sssd/</link>
+      <pubDate>Tue, 01 Jan 2019 17:27:11 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/fedora-28-sssd/</guid>
+      <description>&lt;p&gt;After updating to Fedora 28, adding a user to a group fails with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(Wed Jan  2 00:33:14:341408 2019) [sss_cache] [confdb_get_domains] (0x0010): No domains configured, fatal error!
+Could not open available domains
+usermod: sss_cache exited with status 2
+usermod: Failed to flush the sssd cache.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As suggested, the issue is due to sssd not being configured. If you are not using sssd
+for authentication, simply remove it and try adding the group again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dnf remove sssd
+sudo usermod -aG dialout frank
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>HackRF One Initial Setup</title>

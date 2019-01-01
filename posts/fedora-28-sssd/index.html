@@ -17,100 +17,44 @@
     
     
 
-<title>HackRF One Initial Setup • Blog</title>
+<title>Fedora 28 usermod groups fails • Blog</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HackRF One Initial Setup"/>
-<meta name="twitter:description" content="Setup
+<meta name="twitter:title" content="Fedora 28 usermod groups fails"/>
+<meta name="twitter:description" content="After updating to Fedora 28, adding a user to a group fails with:
+
+(Wed Jan  2 00:33:14:341408 2019) [sss_cache] [confdb_get_domains] (0x0010): No domains configured, fatal error!
+Could not open available domains
+usermod: sss_cache exited with status 2
+usermod: Failed to flush the sssd cache.
 
 
-Install development tools and drivers
+As suggested, the issue is due to sssd not being configured. If you are not using sssd
+for authentication, simply remove it and try adding the group again.
 
-sudo dnf install hackrf hackrf-devel
-
-
-Get latest firmware from https://github.com/mossmann/hackrf/releases
-
-Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-
-cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-
-
-Check firmware version
-
-$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-
-
-Update CPLD
-
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
-
-
-
-Useful Tools
-
-
-GQRX http://gqrx.dk/ spectrum monitor
-GNURadio
-Audacity
+sudo dnf remove sssd
+sudo usermod -aG dialout frank
 "/>
 
-<meta property="og:title" content="HackRF One Initial Setup" />
-<meta property="og:description" content="Setup
+<meta property="og:title" content="Fedora 28 usermod groups fails" />
+<meta property="og:description" content="After updating to Fedora 28, adding a user to a group fails with:
+
+(Wed Jan  2 00:33:14:341408 2019) [sss_cache] [confdb_get_domains] (0x0010): No domains configured, fatal error!
+Could not open available domains
+usermod: sss_cache exited with status 2
+usermod: Failed to flush the sssd cache.
 
 
-Install development tools and drivers
+As suggested, the issue is due to sssd not being configured. If you are not using sssd
+for authentication, simply remove it and try adding the group again.
 
-sudo dnf install hackrf hackrf-devel
-
-
-Get latest firmware from https://github.com/mossmann/hackrf/releases
-
-Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-
-cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-
-
-Check firmware version
-
-$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-
-
-Update CPLD
-
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
-
-
-
-Useful Tools
-
-
-GQRX http://gqrx.dk/ spectrum monitor
-GNURadio
-Audacity
+sudo dnf remove sssd
+sudo usermod -aG dialout frank
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.frankzhao.com.au/posts/setup-hackrf/" /><meta property="article:published_time" content="2018-12-29T21:44:08&#43;13:00"/>
-<meta property="article:modified_time" content="2018-12-29T21:44:08&#43;13:00"/>
+<meta property="og:url" content="https://blog.frankzhao.com.au/posts/fedora-28-sssd/" /><meta property="article:published_time" content="2019-01-01T17:27:11&#43;13:00"/>
+<meta property="article:modified_time" content="2019-01-01T17:27:11&#43;13:00"/>
 
 
     
@@ -231,13 +175,13 @@ Audacity
             
     <article>
   <header>
-    <h1>HackRF One Initial Setup</h1>
+    <h1>Fedora 28 usermod groups fails</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Dec 29, 2018
+      <i class="fas fa-calendar-alt"></i> Jan 01, 2019
     
     
     
@@ -246,7 +190,7 @@ Audacity
           in
           
           
-              <a class="badge badge-category" href="/categories/electrical">ELECTRICAL</a>
+              <a class="badge badge-category" href="/categories/notes">NOTES</a>
               
           
       
@@ -258,13 +202,10 @@ Audacity
           <br/>
            <i class="fas fa-tags"></i>
           
-          <a class="badge badge-tag" href="/tags/hackrf">hackrf</a>
+          <a class="badge badge-tag" href="/tags/notes">notes</a>
            
       
-          <a class="badge badge-tag" href="/tags/rf">rf</a>
-           
-      
-          <a class="badge badge-tag" href="/tags/electronics">electronics</a>
+          <a class="badge badge-tag" href="/tags/fedora">fedora</a>
           
       
     
@@ -278,63 +219,30 @@ Audacity
   
   
   <div class="post">
-    <h2 id="setup">Setup</h2>
+    <p>After updating to Fedora 28, adding a user to a group fails with:</p>
 
-<ol>
-<li><p>Install development tools and drivers</p>
+<pre><code>(Wed Jan  2 00:33:14:341408 2019) [sss_cache] [confdb_get_domains] (0x0010): No domains configured, fatal error!
+Could not open available domains
+usermod: sss_cache exited with status 2
+usermod: Failed to flush the sssd cache.
+</code></pre>
 
-<pre><code class="language-bash">sudo dnf install hackrf hackrf-devel
-</code></pre></li>
+<p>As suggested, the issue is due to sssd not being configured. If you are not using sssd
+for authentication, simply remove it and try adding the group again.</p>
 
-<li><p>Get latest firmware from <a href="https://github.com/mossmann/hackrf/releases">https://github.com/mossmann/hackrf/releases</a></p></li>
-
-<li><p>Update firmware (see <a href="https://github.com/mossmann/hackrf/wiki/Updating-Firmware">https://github.com/mossmann/hackrf/wiki/Updating-Firmware</a>)</p>
-
-<pre><code class="language-bash">cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-</code></pre></li>
-
-<li><p>Check firmware version</p>
-
-<pre><code class="language-bash">$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-</code></pre></li>
-
-<li><p>Update CPLD</p>
-
-<pre><code>hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
-</code></pre></li>
-</ol>
-
-<h1 id="useful-tools">Useful Tools</h1>
-
-<ul>
-<li>GQRX <a href="http://gqrx.dk/">http://gqrx.dk/</a> spectrum monitor</li>
-<li>GNURadio</li>
-<li>Audacity</li>
-</ul>
+<pre><code>sudo dnf remove sssd
+sudo usermod -aG dialout frank
+</code></pre>
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/posts/install-gocv/" class="navigation-prev">
+    <a href="/posts/setup-hackrf/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Installing GoCV</span>
+      <span class="navigation-tittle">HackRF One Initial Setup</span>
     </a>
     
-    
-    <a href="/posts/fedora-28-sssd/" class="navigation-next">
-      <span class="navigation-tittle">Fedora 28 usermod groups fails</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
     
 </div>
 
