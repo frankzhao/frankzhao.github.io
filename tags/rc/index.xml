@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rc on Frank Zhao | Blog</title>
+    <title>Rc on Frank Zhao</title>
     <link>https://blog.frankzhao.com.au/tags/rc/</link>
-    <description>Recent content in Rc on Frank Zhao | Blog</description>
+    <description>Recent content in Rc on Frank Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Dec 2018 21:06:08 +1300</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 19:10:08 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.frankzhao.com.au/tags/rc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>RC Servo Starter Kit</title>
       <link>https://blog.frankzhao.com.au/posts/rc-servo-starter-kit/</link>
-      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
+      <pubDate>Fri, 04 Jan 2019 19:10:08 +1300</pubDate>
       
       <guid>https://blog.frankzhao.com.au/posts/rc-servo-starter-kit/</guid>
       <description>&lt;p&gt;Getting started with a RC setup that works is harder than it looks, due to the number

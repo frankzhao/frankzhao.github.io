@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Frank Zhao | Blog</title>
+    <title>Tags on Frank Zhao</title>
     <link>https://blog.frankzhao.com.au/tags/</link>
-    <description>Recent content in Tags on Frank Zhao | Blog</description>
+    <description>Recent content in Tags on Frank Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Dec 2018 21:06:08 +1300</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 19:10:08 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.frankzhao.com.au/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Electronics</title>
       <link>https://blog.frankzhao.com.au/tags/electronics/</link>
-      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
+      <pubDate>Fri, 04 Jan 2019 19:10:08 +1300</pubDate>
       
       <guid>https://blog.frankzhao.com.au/tags/electronics/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>Rc</title>
       <link>https://blog.frankzhao.com.au/tags/rc/</link>
-      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
+      <pubDate>Fri, 04 Jan 2019 19:10:08 +1300</pubDate>
       
       <guid>https://blog.frankzhao.com.au/tags/rc/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>Servo</title>
       <link>https://blog.frankzhao.com.au/tags/servo/</link>
-      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
+      <pubDate>Fri, 04 Jan 2019 19:10:08 +1300</pubDate>
       
       <guid>https://blog.frankzhao.com.au/tags/servo/</guid>
       <description></description>
