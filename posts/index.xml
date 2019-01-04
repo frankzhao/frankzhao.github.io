@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blog</title>
+    <title>Posts on Frank Zhao | Blog</title>
     <link>https://blog.frankzhao.com.au/posts/</link>
-    <description>Recent content in Posts on Blog</description>
+    <description>Recent content in Posts on Frank Zhao | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 17:27:11 +1300</lastBuildDate>
@@ -31,6 +31,17 @@ for authentication, simply remove it and try adding the group again.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo dnf remove sssd
 sudo usermod -aG dialout frank
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>RC Servo Starter Kit</title>
+      <link>https://blog.frankzhao.com.au/posts/rc-servo-starter-kit/</link>
+      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/rc-servo-starter-kit/</guid>
+      <description>&lt;p&gt;Getting started with a RC setup that works is harder than it looks, due to the number
+of parts and specifications required. A common starter requirement is to control a few servos
+remotely. These are my notes for the components and considerations required to get started.&lt;/p&gt;</description>
     </item>
     
     <item>

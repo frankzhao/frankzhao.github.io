@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Blog</title>
+    <title>Categories on Frank Zhao | Blog</title>
     <link>https://blog.frankzhao.com.au/categories/</link>
-    <description>Recent content in Categories on Blog</description>
+    <description>Recent content in Categories on Frank Zhao | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -22,7 +22,7 @@
     <item>
       <title>Electrical</title>
       <link>https://blog.frankzhao.com.au/categories/electrical/</link>
-      <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
+      <pubDate>Sun, 30 Dec 2018 21:06:08 +1300</pubDate>
       
       <guid>https://blog.frankzhao.com.au/categories/electrical/</guid>
       <description></description>
