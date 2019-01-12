@@ -26,12 +26,9 @@
 
 
 &lt;p&gt;This LCD is a small I2C display module that has a 16x2 character display.
-The text appears white on blue, with a dimmable backlight.&lt;/p&gt;
-
-&lt;p&gt;Note that this display uses a AiP31068L chipset, that is not compatible
-with the more common HD44780 chipset. Information and libraries for this
-chipset were a little hard to find, so I have listed some resources here
-for reference.&lt;/p&gt;
+The text appears white on blue, with a dimmable backlight. Information and
+libraries for this chipset were a little hard to find, so I have listed
+some resources here for reference.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.dfrobot.com/wiki/index.php/Gravity:_I2C_LCD1602_Arduino_LCD_Display_Module_SKU:_DFR0555%5CDF0556%5CDFR0557&#34;&gt;DFRobot wiki&lt;/a&gt;&lt;/li&gt;
@@ -42,7 +39,25 @@ for reference.&lt;/p&gt;
 &lt;p&gt;The officially provided library appears to be some monochromatic re-implementation of Seeed Studio&amp;rsquo;s &lt;em&gt;Grove LCD RGB Backlight&lt;/em&gt; that can be found at: &lt;a href=&#34;https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight&#34;&gt;https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I could not find a datasheet for this chipset, however I came across the information sheet
-which had some broken links. (&lt;a href=&#34;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&#34;&gt;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&lt;/a&gt;)&lt;/p&gt;</description>
+which had some broken links. (&lt;a href=&#34;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&#34;&gt;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h4 id=&#34;notes&#34;&gt;Notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This display uses a AiP31068L chipset, that is not compatible
+with the more common HD44780 chipset.&lt;/li&gt;
+&lt;li&gt;There are actually two I2C devices in the module, one for the backlight, and
+one for the character display. Their addresses are:
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;  #define LCD_ADDRESS     (0x7c&amp;gt;&amp;gt;1)   // character 0x3e
+  #define RGB_ADDRESS     (0xc0&amp;gt;&amp;gt;1)   // backlight 0x60
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note for the Arduino Uno, the I2C pins are A4 (SDA) and A5 (SCL).&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
