@@ -17,100 +17,66 @@
     
     
 
-<title>HackRF One Initial Setup • Frank Zhao</title>
+<title>DFRobot I2C LCD1602 (Gravity) • Frank Zhao</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HackRF One Initial Setup"/>
-<meta name="twitter:description" content="Setup
-
-
-Install development tools and drivers
-
-sudo dnf install hackrf hackrf-devel
-
-
-Get latest firmware from https://github.com/mossmann/hackrf/releases
-
-Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-
-cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-
-
-Check firmware version
-
-$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-
-
-Update CPLD
-
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+<meta name="twitter:title" content="DFRobot I2C LCD1602 (Gravity)"/>
+<meta name="twitter:description" content="
+     
+            DFRobot LCD1602DFRobot LCD1602 I2C module with with blue background.
+        
 
 
 
-Useful Tools
+This LCD is a small I2C display module that has a 16x2 character display.
+The text appears white on blue, with a dimmable backlight.
+
+Note that this display uses a AiP31068L chipset, that is not compatible
+with the more common HD44780 chipset. Information and libraries for this
+chipset were a little hard to find, so I have listed some resources here
+for reference.
 
 
-GQRX http://gqrx.dk/ spectrum monitor
-GNURadio
-Audacity
-"/>
-
-<meta property="og:title" content="HackRF One Initial Setup" />
-<meta property="og:description" content="Setup
+DFRobot wiki
+Arduino library
+Datasheet
 
 
-Install development tools and drivers
+The officially provided library appears to be some monochromatic re-implementation of Seeed Studio&rsquo;s Grove LCD RGB Backlight that can be found at: https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight
 
-sudo dnf install hackrf hackrf-devel
+I could not find a datasheet for this chipset, however I came across the information sheet
+which had some broken links. (http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf)"/>
 
-
-Get latest firmware from https://github.com/mossmann/hackrf/releases
-
-Update firmware (see https://github.com/mossmann/hackrf/wiki/Updating-Firmware)
-
-cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-
-
-Check firmware version
-
-$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-
-
-Update CPLD
-
-hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+<meta property="og:title" content="DFRobot I2C LCD1602 (Gravity)" />
+<meta property="og:description" content="
+     
+            DFRobot LCD1602DFRobot LCD1602 I2C module with with blue background.
+        
 
 
 
-Useful Tools
+This LCD is a small I2C display module that has a 16x2 character display.
+The text appears white on blue, with a dimmable backlight.
+
+Note that this display uses a AiP31068L chipset, that is not compatible
+with the more common HD44780 chipset. Information and libraries for this
+chipset were a little hard to find, so I have listed some resources here
+for reference.
 
 
-GQRX http://gqrx.dk/ spectrum monitor
-GNURadio
-Audacity
-" />
+DFRobot wiki
+Arduino library
+Datasheet
+
+
+The officially provided library appears to be some monochromatic re-implementation of Seeed Studio&rsquo;s Grove LCD RGB Backlight that can be found at: https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight
+
+I could not find a datasheet for this chipset, however I came across the information sheet
+which had some broken links. (http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.frankzhao.com.au/posts/setup-hackrf/" /><meta property="article:published_time" content="2018-12-29T21:44:08&#43;13:00"/>
-<meta property="article:modified_time" content="2018-12-29T21:44:08&#43;13:00"/>
+<meta property="og:url" content="https://blog.frankzhao.com.au/posts/dfrobot-i2c-lcd1602-gravity/" /><meta property="article:published_time" content="2019-01-12T15:29:11&#43;13:00"/>
+<meta property="article:modified_time" content="2019-01-12T15:29:11&#43;13:00"/>
 
 
     
@@ -231,13 +197,13 @@ Audacity
             
     <article>
   <header>
-    <h1>HackRF One Initial Setup</h1>
+    <h1>DFRobot I2C LCD1602 (Gravity)</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Dec 29, 2018
+      <i class="fas fa-calendar-alt"></i> Jan 12, 2019
     
     
     
@@ -258,13 +224,10 @@ Audacity
           <br/>
            <i class="fas fa-tags"></i>
           
-          <a class="badge badge-tag" href="/tags/hackrf">hackrf</a>
-           
-      
-          <a class="badge badge-tag" href="/tags/rf">rf</a>
-           
-      
           <a class="badge badge-tag" href="/tags/electronics">electronics</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/arduino">arduino</a>
           
       
     
@@ -278,63 +241,42 @@ Audacity
   
   
   <div class="post">
-    <h2 id="setup">Setup</h2>
+    <figure>
+    <img src="/dfrobot/dfrobot_lcd1602.jpg"
+         alt="DFRobot LCD1602 I2C module with with blue background." width="500px"/> <figcaption>
+            <h4>DFRobot LCD1602</h4><p>DFRobot LCD1602 I2C module with with blue background.</p>
+        </figcaption>
+</figure>
 
-<ol>
-<li><p>Install development tools and drivers</p>
 
-<pre><code class="language-bash">sudo dnf install hackrf hackrf-devel
-</code></pre></li>
+<p>This LCD is a small I2C display module that has a 16x2 character display.
+The text appears white on blue, with a dimmable backlight.</p>
 
-<li><p>Get latest firmware from <a href="https://github.com/mossmann/hackrf/releases">https://github.com/mossmann/hackrf/releases</a></p></li>
-
-<li><p>Update firmware (see <a href="https://github.com/mossmann/hackrf/wiki/Updating-Firmware">https://github.com/mossmann/hackrf/wiki/Updating-Firmware</a>)</p>
-
-<pre><code class="language-bash">cd firmware-bin
-hackrf_spiflash -w hackrf_one_usb.bin
-</code></pre></li>
-
-<li><p>Check firmware version</p>
-
-<pre><code class="language-bash">$ hackrf_info
-hackrf_info version: unknown
-libhackrf version: unknown (0.5)
-Found HackRF
-Index: 0
-Serial number: 0000000000000000a06063c8220a635f
-Board ID Number: 2 (HackRF One)
-Firmware Version: 2018.01.1 (API:1.02)
-Part ID Number: 0xa000cb3c 0x00534f64
-</code></pre></li>
-
-<li><p>Update CPLD</p>
-
-<pre><code>hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
-</code></pre></li>
-</ol>
-
-<h1 id="useful-tools">Useful Tools</h1>
+<p>Note that this display uses a AiP31068L chipset, that is not compatible
+with the more common HD44780 chipset. Information and libraries for this
+chipset were a little hard to find, so I have listed some resources here
+for reference.</p>
 
 <ul>
-<li>GQRX <a href="http://gqrx.dk/">http://gqrx.dk/</a> spectrum monitor</li>
-<li>GNURadio</li>
-<li>Audacity</li>
+<li><a href="https://www.dfrobot.com/wiki/index.php/Gravity:_I2C_LCD1602_Arduino_LCD_Display_Module_SKU:_DFR0555%5CDF0556%5CDFR0557">DFRobot wiki</a></li>
+<li><a href="https://github.com/bearwaterfall/DFRobot_LCD-master/tree/master">Arduino library</a></li>
+<li><a href="https://github.com/Arduinolibrary/DFRobot_Gravity_I2C_LCD1602_Display_module/raw/master/LCD%20Datasheet.pdf">Datasheet</a></li>
 </ul>
+
+<p>The officially provided library appears to be some monochromatic re-implementation of Seeed Studio&rsquo;s <em>Grove LCD RGB Backlight</em> that can be found at: <a href="https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight">https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight</a></p>
+
+<p>I could not find a datasheet for this chipset, however I came across the information sheet
+which had some broken links. (<a href="http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf">http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf</a>)</p>
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/posts/install-gocv/" class="navigation-prev">
+    <a href="/posts/rc-servo-starter-kit/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Installing GoCV</span>
+      <span class="navigation-tittle">RC Servo Starter Kit</span>
     </a>
     
-    
-    <a href="/posts/fedora-28-sssd/" class="navigation-next">
-      <span class="navigation-tittle">Fedora 28 usermod groups fails</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
     
 </div>
 

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.frankzhao.com.au/posts/dfrobot-i2c-lcd1602-gravity/</loc>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.frankzhao.com.au/posts/rc-servo-starter-kit/</loc>
     <lastmod>2019-01-04T19:10:08+13:00</lastmod>
   </url>
@@ -23,6 +28,12 @@
   </url>
   
   <url>
+    <loc>https://blog.frankzhao.com.au/tags/arduino/</loc>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.frankzhao.com.au/categories/</loc>
     <priority>0</priority>
   </url>
@@ -34,14 +45,14 @@
   </url>
   
   <url>
-    <loc>https://blog.frankzhao.com.au/categories/electrical/</loc>
-    <lastmod>2019-01-04T19:10:08+13:00</lastmod>
+    <loc>https://blog.frankzhao.com.au/tags/electronics/</loc>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.frankzhao.com.au/tags/electronics/</loc>
-    <lastmod>2019-01-04T19:10:08+13:00</lastmod>
+    <loc>https://blog.frankzhao.com.au/categories/electronics/</loc>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -53,7 +64,7 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/</loc>
-    <lastmod>2019-01-04T19:10:08+13:00</lastmod>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -89,7 +100,7 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/posts/</loc>
-    <lastmod>2019-01-04T19:10:08+13:00</lastmod>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -113,7 +124,7 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/tags/</loc>
-    <lastmod>2019-01-04T19:10:08+13:00</lastmod>
+    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
     <priority>0</priority>
   </url>
   

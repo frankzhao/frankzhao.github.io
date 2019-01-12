@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on Frank Zhao</title>
+    <link>https://blog.frankzhao.com.au/tags/arduino/</link>
+    <description>Recent content in Arduino on Frank Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 15:29:11 +1300</lastBuildDate>
+    
+	<atom:link href="https://blog.frankzhao.com.au/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DFRobot I2C LCD1602 (Gravity)</title>
+      <link>https://blog.frankzhao.com.au/posts/dfrobot-i2c-lcd1602-gravity/</link>
+      <pubDate>Sat, 12 Jan 2019 15:29:11 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/dfrobot-i2c-lcd1602-gravity/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://blog.frankzhao.com.au/dfrobot/dfrobot_lcd1602.jpg&#34;
+         alt=&#34;DFRobot LCD1602 I2C module with with blue background.&#34; width=&#34;500px&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;DFRobot LCD1602&lt;/h4&gt;&lt;p&gt;DFRobot LCD1602 I2C module with with blue background.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;This LCD is a small I2C display module that has a 16x2 character display.
+The text appears white on blue, with a dimmable backlight.&lt;/p&gt;
+
+&lt;p&gt;Note that this display uses a AiP31068L chipset, that is not compatible
+with the more common HD44780 chipset. Information and libraries for this
+chipset were a little hard to find, so I have listed some resources here
+for reference.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dfrobot.com/wiki/index.php/Gravity:_I2C_LCD1602_Arduino_LCD_Display_Module_SKU:_DFR0555%5CDF0556%5CDFR0557&#34;&gt;DFRobot wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bearwaterfall/DFRobot_LCD-master/tree/master&#34;&gt;Arduino library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Arduinolibrary/DFRobot_Gravity_I2C_LCD1602_Display_module/raw/master/LCD%20Datasheet.pdf&#34;&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The officially provided library appears to be some monochromatic re-implementation of Seeed Studio&amp;rsquo;s &lt;em&gt;Grove LCD RGB Backlight&lt;/em&gt; that can be found at: &lt;a href=&#34;https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight&#34;&gt;https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I could not find a datasheet for this chipset, however I came across the information sheet
+which had some broken links. (&lt;a href=&#34;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&#34;&gt;http://www.west-l.com/uploads/tdpdf/104030001_eng_tds.pdf&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
