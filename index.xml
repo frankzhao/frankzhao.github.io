@@ -6,10 +6,38 @@
     <description>Recent content on Frank Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jan 2019 15:29:11 +1300</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2019 21:35:40 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.frankzhao.com.au/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Proxmark3 Firmware Installation on Fedora</title>
+      <link>https://blog.frankzhao.com.au/posts/proxmark3-firmware-installation-on-fedora/</link>
+      <pubDate>Sun, 24 Mar 2019 21:35:40 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/posts/proxmark3-firmware-installation-on-fedora/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install dependencies&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dnf install readline readline-devel libusb libusb-devel qt4-devel ncurses-devel arm-none-eabi-gcc arm-none-eabi-newlib pcsc-lite pcsc-lite-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install blacklist rules&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
+sudo udevadm control --reload-rules
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Build&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;make clean
+make all
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Then proceed with flashing.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>DFRobot I2C LCD1602 (Gravity)</title>

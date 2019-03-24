@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
     
+    
+
+
     <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     <meta charset="utf-8">
@@ -14,18 +17,56 @@
     
     
 
-<title>Tags • Frank Zhao</title>
+<title>Proxmark3 Firmware Installation on Fedora • Frank Zhao</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="Technical musings and notes"/>
+<meta name="twitter:title" content="Proxmark3 Firmware Installation on Fedora"/>
+<meta name="twitter:description" content="
+Install dependencies
 
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="Technical musings and notes" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.frankzhao.com.au/tags/" />
-<meta property="og:updated_time" content="2019-01-12T15:29:11&#43;13:00"/>
+sudo dnf install readline readline-devel libusb libusb-devel qt4-devel ncurses-devel arm-none-eabi-gcc arm-none-eabi-newlib pcsc-lite pcsc-lite-devel
+
+
+Install blacklist rules
+
+sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
+sudo udevadm control --reload-rules
+
+
+Build
+
+make clean
+make all
+
+
+Then proceed with flashing.
+"/>
+
+<meta property="og:title" content="Proxmark3 Firmware Installation on Fedora" />
+<meta property="og:description" content="
+Install dependencies
+
+sudo dnf install readline readline-devel libusb libusb-devel qt4-devel ncurses-devel arm-none-eabi-gcc arm-none-eabi-newlib pcsc-lite pcsc-lite-devel
+
+
+Install blacklist rules
+
+sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
+sudo udevadm control --reload-rules
+
+
+Build
+
+make clean
+make all
+
+
+Then proceed with flashing.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.frankzhao.com.au/posts/proxmark3-firmware-installation-on-fedora/" /><meta property="article:published_time" content="2019-03-24T21:35:40&#43;13:00"/>
+<meta property="article:modified_time" content="2019-03-24T21:35:40&#43;13:00"/>
 
 
     
@@ -51,10 +92,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
     
-
-<link href="https://blog.frankzhao.com.au/tags/index.xml" rel="alternate" type="application/rss+xml" title="Frank Zhao" />
-<link href="https://blog.frankzhao.com.au/tags/index.xml" rel="feed" type="application/rss+xml" title="Frank Zhao" />
-
 
 </head>
 
@@ -172,112 +209,125 @@
 
         <div class="content container">
             
-    <span class="section__title">Tags</span>
-<ul class="posts">
+    <article>
+  <header>
+    <h1>Proxmark3 Firmware Installation on Fedora</h1>
     
-        
-<li>
-  <span class="list__title--small">
-    <a href="/tags/arduino/" >Arduino</a>
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Mar 24, 2019
+    
+    
+    
       
-      <time class="pull-right hidden-tablet">Jan 12 &#39;19</time>
       
-  </span>
-</li>
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/electronics">ELECTRONICS</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/proxmark3">proxmark3</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/rf">rf</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/electronics">electronics</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/electronics/" >Electronics</a>
-      
-      <time class="pull-right hidden-tablet">Mar 24 &#39;19</time>
-      
-  </span>
-</li>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/fedora/" >Fedora</a>
-      
-      <time class="pull-right hidden-tablet">Jan 01 &#39;19</time>
-      
-  </span>
-</li>
+  </header>
+  
+  
+  <div class="post">
+    <ol>
+<li><p>Install dependencies</p>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/golang/" >Golang</a>
-      
-      <time class="pull-right hidden-tablet">Sep 11 &#39;18</time>
-      
-  </span>
-</li>
+<pre><code>sudo dnf install readline readline-devel libusb libusb-devel qt4-devel ncurses-devel arm-none-eabi-gcc arm-none-eabi-newlib pcsc-lite pcsc-lite-devel
+</code></pre></li>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/hackrf/" >Hackrf</a>
-      
-      <time class="pull-right hidden-tablet">Dec 29 &#39;18</time>
-      
-  </span>
-</li>
+<li><p>Install blacklist rules</p>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/notes/" >Notes</a>
-      
-      <time class="pull-right hidden-tablet">Jan 01 &#39;19</time>
-      
-  </span>
-</li>
+<pre><code>sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
+sudo udevadm control --reload-rules
+</code></pre></li>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/opencv/" >Opencv</a>
-      
-      <time class="pull-right hidden-tablet">Sep 11 &#39;18</time>
-      
-  </span>
-</li>
+<li><p>Build</p>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/proxmark3/" >Proxmark3</a>
-      
-      <time class="pull-right hidden-tablet">Mar 24 &#39;19</time>
-      
-  </span>
-</li>
+<pre><code>make clean
+make all
+</code></pre></li>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/rc/" >Rc</a>
-      
-      <time class="pull-right hidden-tablet">Jan 04 &#39;19</time>
-      
-  </span>
-</li>
+<li><p>Then proceed with flashing.</p></li>
+</ol>
+  </div>
+  
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/rf/" >Rf</a>
-      
-      <time class="pull-right hidden-tablet">Mar 24 &#39;19</time>
-      
-  </span>
-</li>
+<div class="navigation navigation-single">
+    
+    <a href="/posts/dfrobot-i2c-lcd1602-gravity/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">DFRobot I2C LCD1602 (Gravity)</span>
+    </a>
+    
+    
+</div>
 
-<li>
-  <span class="list__title--small">
-    <a href="/tags/servo/" >Servo</a>
-      
-      <time class="pull-right hidden-tablet">Jan 04 &#39;19</time>
-      
-  </span>
-</li>
 
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'blog-frankzhao-com-au';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
 
     
-</ul>
+
+
+</article>
 
 
         </div>
@@ -298,6 +348,20 @@ if (!doNotTrack) {
 
 
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
 
 
 

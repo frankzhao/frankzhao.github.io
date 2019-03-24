@@ -23,7 +23,7 @@
 <meta property="og:description" content="Technical musings and notes" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.frankzhao.com.au/" />
-<meta property="og:updated_time" content="2019-01-12T15:29:11&#43;13:00"/>
+<meta property="og:updated_time" content="2019-03-24T21:35:40&#43;13:00"/>
 
 
     
@@ -173,6 +173,44 @@
   <div class="post-list">
     
     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/proxmark3-firmware-installation-on-fedora/" >Proxmark3 Firmware Installation on Fedora</a>
+        </span>
+        <span class="item__date">
+          Mar 24, 2019
+        </span>
+        <span >
+        
+        <ol>
+<li><p>Install dependencies</p>
+
+<pre><code>sudo dnf install readline readline-devel libusb libusb-devel qt4-devel ncurses-devel arm-none-eabi-gcc arm-none-eabi-newlib pcsc-lite pcsc-lite-devel
+</code></pre></li>
+
+<li><p>Install blacklist rules</p>
+
+<pre><code>sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
+sudo udevadm control --reload-rules
+</code></pre></li>
+
+<li><p>Build</p>
+
+<pre><code>make clean
+make all
+</code></pre></li>
+
+<li><p>Then proceed with flashing.</p></li>
+</ol>
+        
+        </span>
+        
+        </div>
+        
+     
       
         
       

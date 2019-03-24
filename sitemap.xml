@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.frankzhao.com.au/posts/proxmark3-firmware-installation-on-fedora/</loc>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.frankzhao.com.au/posts/dfrobot-i2c-lcd1602-gravity/</loc>
     <lastmod>2019-01-12T15:29:11+13:00</lastmod>
   </url>
@@ -46,13 +51,13 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/tags/electronics/</loc>
-    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.frankzhao.com.au/categories/electronics/</loc>
-    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/</loc>
-    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,7 +105,13 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/posts/</loc>
-    <lastmod>2019-01-12T15:29:11+13:00</lastmod>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.frankzhao.com.au/tags/proxmark3/</loc>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,7 +123,7 @@
   
   <url>
     <loc>https://blog.frankzhao.com.au/tags/rf/</loc>
-    <lastmod>2018-12-29T21:44:08+13:00</lastmod>
+    <lastmod>2019-03-24T21:35:40+13:00</lastmod>
     <priority>0</priority>
   </url>
   
