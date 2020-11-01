@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Frank Zhao</title>
-    <link>https://blog.frankzhao.com.au/</link>
-    <description>Recent content on Frank Zhao</description>
+    <title>Electronics on Frank Zhao</title>
+    <link>https://blog.frankzhao.com.au/categories/electronics/</link>
+    <description>Recent content in Electronics on Frank Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Mar 2019 21:35:40 +1300</lastBuildDate>
     
-	<atom:link href="https://blog.frankzhao.com.au/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.frankzhao.com.au/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -100,28 +100,6 @@ remotely. These are my notes for the components and considerations required to g
     </item>
     
     <item>
-      <title>Fedora 28 usermod groups fails</title>
-      <link>https://blog.frankzhao.com.au/posts/fedora-28-sssd/</link>
-      <pubDate>Tue, 01 Jan 2019 17:27:11 +1300</pubDate>
-      
-      <guid>https://blog.frankzhao.com.au/posts/fedora-28-sssd/</guid>
-      <description>&lt;p&gt;After updating to Fedora 28, adding a user to a group fails with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(Wed Jan  2 00:33:14:341408 2019) [sss_cache] [confdb_get_domains] (0x0010): No domains configured, fatal error!
-Could not open available domains
-usermod: sss_cache exited with status 2
-usermod: Failed to flush the sssd cache.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As suggested, the issue is due to sssd not being configured. If you are not using sssd
-for authentication, simply remove it and try adding the group again.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo dnf remove sssd
-sudo usermod -aG dialout frank
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
       <title>HackRF One Initial Setup</title>
       <link>https://blog.frankzhao.com.au/posts/setup-hackrf/</link>
       <pubDate>Sat, 29 Dec 2018 21:44:08 +1300</pubDate>
@@ -169,24 +147,6 @@ Part ID Number: 0xa000cb3c 0x00534f64
 &lt;li&gt;GNURadio&lt;/li&gt;
 &lt;li&gt;Audacity&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing GoCV</title>
-      <link>https://blog.frankzhao.com.au/posts/install-gocv/</link>
-      <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
-      
-      <guid>https://blog.frankzhao.com.au/posts/install-gocv/</guid>
-      <description>&lt;p&gt;Installing GoCV requires a few extra environment variables to be set.&lt;/p&gt;
-
-&lt;p&gt;Before the &lt;code&gt;make install&lt;/code&gt; phase, set the following variables&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export GOPATH=/home/frank/go
-export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
-export LD_LIBRARY_PATH=/usr/local/lib64
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It is also easier to install the OpenCV libraries system-wide by running &lt;code&gt;make install&lt;/code&gt; as the root user.&lt;/p&gt;</description>
     </item>
     
   </channel>

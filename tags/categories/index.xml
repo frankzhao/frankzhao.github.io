@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Frank Zhao</title>
+    <link>https://blog.frankzhao.com.au/categories/</link>
+    <description>Recent content in Categories on Frank Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://blog.frankzhao.com.au/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://blog.frankzhao.com.au/categories/computer-vision/</link>
+      <pubDate>Tue, 11 Sep 2018 22:27:37 +1200</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/categories/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electronics</title>
+      <link>https://blog.frankzhao.com.au/categories/electronics/</link>
+      <pubDate>Sun, 24 Mar 2019 21:35:40 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/categories/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://blog.frankzhao.com.au/categories/notes/</link>
+      <pubDate>Tue, 01 Jan 2019 17:27:11 +1300</pubDate>
+      
+      <guid>https://blog.frankzhao.com.au/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
